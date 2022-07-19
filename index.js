@@ -32,8 +32,8 @@ inquirer
         {
             message:questions[4],
             type: 'list',
-            choices:[''],
-            name:'lisence'
+            choices:['Apache','Boost','BSD','Creative Commons','Eclipse','GNU','The Organization for Ethical Source','IBM','ISC','MIT','Mozilla','Open Data Commons','Perl','SIL','Unlicense','WTFPL','Zlib'],
+            name:'license'
         },
         {
             message:questions[5],
@@ -62,7 +62,9 @@ inquirer
 // Create a function to write README file
 
     const readmeString = `# ${ans.title}
-    
+
+![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)
+
 ## Description
 
 ${ans.description}
@@ -86,7 +88,7 @@ ${ans.usage}
 
 ## License
 
-${ans.license}
+Copyright covered under the ${ans.license} license.
 
 ## Contributing
 
@@ -108,6 +110,4 @@ Reach me with additional questions at: ${ans.questions}
         console.log('success!')
     })
 })
-
-
 
