@@ -62,8 +62,8 @@ inquirer
 // Create a function to write README file
 
     const readmeString = `# ${ans.title}
-
-![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)
+    
+![License](https://img.shields.io/badge/License-${ans.license}-brightgreen.svg)
 
 ## Description
 
@@ -88,7 +88,7 @@ ${ans.usage}
 
 ## License
 
-Copyright covered under the ${ans.license} license.
+Copyright covered under ${ans.license} license.
 
 ## Contributing
 
